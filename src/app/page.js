@@ -10,33 +10,35 @@ export default function PortfolioPage() {
   const projects = [
     {
       id: 1,
-      title: "Project Alpha",
-      desc: "Full-stack app built with Next.js + Node + Postgres.",
-      tech: ["Next.js", "Node", "Postgres", "Tailwind"],
+      title: "Capital Now",
+      desc: "Full-stack app built with Next.js + Node + Mysql + PHP",
+      tech: ["Next.js", "Node", "Mysql", "PHP"],
       url: "#",
     },
     {
       id: 2,
-      title: "Design System",
+      title: "Quick2 Recharge",
       desc: "Reusable component library and design tokens.",
-      tech: ["React", "Storybook", "TypeScript"],
+      tech: ["HTML", "PHP", "MySQL","CSS"],
       url: "#",
     },
     {
       id: 3,
-      title: "Real-time Dashboard",
+      title: "Shopping Cart",
       desc: "Analytics dashboard with sockets and charts.",
-      tech: ["React", "Socket.io", "Recharts"],
+      tech: ["PHP", "MySQL", "HTML","CSS"],
       url: "#",
     },
   ];
 
   const skills = [
-    { name: "JavaScript/TypeScript", level: 90 },
-    { name: "React / Next.js", level: 85 },
-    { name: "Node.js / Express", level: 80 },
-    { name: "Databases (Postgres, MongoDB)", level: 75 },
-    { name: "Testing (Jest, RTL)", level: 70 },
+    { name: "PHP, Codigniter", level: 95 },
+    { name: "JavaScript", level: 90 },
+    { name: "Node.js / Express", level: 90 },
+    { name: "Databases (MySql, MongoDB)", level: 90 },
+    { name: "React/Next", level: 70 },
+    { name: "HTML,CSS", level: 80 },
+    { name: "Testing (Jest)", level: 70 },
   ];
 
   const sectionVariants = {
@@ -130,7 +132,7 @@ export default function PortfolioPage() {
         </div>
 
         <motion.img
-          src="/me.jpg"
+          src="/avtar.jpg"
           alt="Your portrait"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
