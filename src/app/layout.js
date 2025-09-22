@@ -24,69 +24,10 @@ export default function RootLayout({ children }) {
       
     <html lang="en">
       <body className="bg-gray-50">
-        {/* Header */}
-        <header className="bg-white shadow-md">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              {/* Logo */}
-              <h1 className="text-xl font-bold">
-                <Link href="/">My Website</Link>
-              </h1>
-
-              {/* Desktop Menu */}
-              <nav className="hidden md:flex space-x-4">
-                <Link href="/" className={linkClasses("/")}>
-                  Home
-                </Link>
-                <Link href="/about" className={linkClasses("/about")}>
-                  About
-                </Link>
-                <Link href="/career" className={linkClasses("/career")}>
-                  Careers
-                </Link>
-              </nav>
-
-              {/* Hamburger Button (Mobile) */}
-              <button
-                className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-200"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                {isOpen ? "✖" : "☰"}
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Menu */}
-          {isOpen && (
-            <nav className="md:hidden bg-white border-t border-gray-200">
-              <Link href="/" className={linkClasses("/")} onClick={() => setIsOpen(false)}>
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className={linkClasses("/about")}
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/career"
-                className={linkClasses("/career")}
-                onClick={() => setIsOpen(false)}
-              >
-                Careers
-              </Link>
-            </nav>
-          )}
-        </header>
-
         {/* Main Content */}
         <main className="max-w-5xl mx-auto p-4">{children}</main>
 
         {/* Footer */}
-        <footer className="bg-gray-100 text-center p-4 border-t">
-          <p>© {new Date().getFullYear()} My Website. All rights reserved.</p>
-        </footer>
       </body>
     </html>
       

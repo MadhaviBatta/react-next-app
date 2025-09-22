@@ -60,3 +60,13 @@ footer {
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
 }
+
+/* Offset sections for fixed navbar height */
+section {
+  scroll-margin-top: 6rem; /* adjust based on your navbar height */
+}
+
+/* Optional smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
